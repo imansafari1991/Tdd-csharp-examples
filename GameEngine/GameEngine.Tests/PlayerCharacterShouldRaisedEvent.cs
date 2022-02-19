@@ -27,7 +27,8 @@ namespace GameEngine.Tests
         //[InlineData(50, 50)]
         //[InlineData(101, 1)]
 
-        [MemberData(nameof(InternalHealthDamageTestData.TestData), MemberType = typeof(InternalHealthDamageTestData))]
+        //[MemberData(nameof(InternalHealthDamageTestData.TestData), MemberType = typeof(InternalHealthDamageTestData))]
+        [MemberData(nameof(ExternalHealthDamageTestData.TestData), MemberType = typeof(ExternalHealthDamageTestData))]
         public void TakeDamage(int damage,int expectedHealth)
         {
             PlayerCharacter sut = new PlayerCharacter();
